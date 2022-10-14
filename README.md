@@ -11,4 +11,4 @@
  1-ɪɴᴛᴀʟʟᴀᴛɪᴏɴ ᴏɴᴇ ᴛɪᴍᴇ (ꜱᴄʀɪᴘᴛ ᴀᴜᴛᴏᴍᴀᴛɪᴄ ɪɴꜱᴛᴀʟʟᴀᴛɪᴏɴ)
 
 
-    wget -O terp.sh https://raw.githubusercontent.com/appieasahbie/Terp-Network/main/terp.sh && chmod +x terp.sh && ./terp.sh
+    wget -O terp.sh https://raw.githubusercontent.com/appieasahbie/terp/main/terp.sh && chmod +x terp.sh && ./terp.sh
