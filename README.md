@@ -1,4 +1,5 @@
-# 🍎 ⋆ 🍩  🎀  𝒯𝑒𝓇𝓅-𝒩𝑒𝓉𝓌𝓇❁𝓀  🎀  🍩 ⋆ 🍎
+# ˜”*°•.˜”*°• Terp Network •°*”˜.•°*”˜
+
 
 
 
@@ -182,26 +183,32 @@
    + Enable Service
 
            sudo systemctl enable terpd
+   
 
    + Disable Service
 
            sudo systemctl disable terpd
+   
 
     + Run Service
 
            sudo systemctl start terpd
+   
 
     + Stop Service
 
            sudo systemctl stop terpd
+   
 
     + Restart Service
 
            sudo systemctl restart terpd
+   
 
     + Check Service Status
 
            sudo systemctl status terpd
+   
 
     + Check Service Logs
 
