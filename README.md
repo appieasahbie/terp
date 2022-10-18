@@ -6,7 +6,7 @@
    ![trepp](https://user-images.githubusercontent.com/108979536/195939456-266958e0-a623-436c-ac4e-f2a3de6a5836.png)
 # Offecial Links of Terp
 
- + https://github.com/terpnetwork/terp-core
+ + Github : https://github.com/terpnetwork/terp-core
  + Discord Channel :https://discord.gg/SQFJMGV8
  
  Terp node setup for testnet tutorial
