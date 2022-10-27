@@ -164,53 +164,53 @@
            terpd tx staking unbond $(terpd keys show wallet --bech val -a) 1000000uterpx --from wallet --chain-id athena-1 --gas-prices 0.1uterpx --gas-adjustment 1.5 --gas auto -y 
    
    
-   + Get Validator Info
+### Get Validator Info
 
            terpd status 2>&1 | jq .ValidatorInfo
    
-   + Get Catching Up
+### Get Catching Up
 
            terpd status 2>&1 | jq .SyncInfo.catching_up
    
-   + Get Latest Height
+### Get Latest Height
 
            terpd status 2>&1 | jq .SyncInfo.latest_block_height
    
-   + Remove node
+### Remove node
    
            sudo systemctl stop terpd && sudo systemctl disable terpd && sudo rm /etc/systemd/system/terpd.service && sudo systemctl daemon-reload && rm -rf $HOME/.terp  && rm $(which terpd) 
    
-   + Enable Service
+ ### Enable Service
 
            sudo systemctl enable terpd
    
 
-   + Disable Service
+ ### Disable Service
 
            sudo systemctl disable terpd
    
 
-    + Run Service
+ ### Run Service
 
            sudo systemctl start terpd
    
 
-    + Stop Service
+ ### Stop Service
 
            sudo systemctl stop terpd
    
 
-    + Restart Service
+ ### Restart Service
 
            sudo systemctl restart terpd
    
 
-    + Check Service Status
+ ###  Check Service Status
 
            sudo systemctl status terpd
    
 
-    + Check Service Logs
+ ### Check Service Logs
 
            sudo journalctl -u terpd -f --no-hostname -o cat
    
