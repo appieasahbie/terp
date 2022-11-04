@@ -102,18 +102,16 @@
          
  To create validator use this command 
  
-         terpd tx staking create-validator \ 
-         --amount 1000000uterpx \ 
-         --commission-max-change-rate "0.05" \ 
-         --commission-max-rate "0.10" \ 
-         --commission-rate "0.05" \ 
-         --min-self-delegation "1" \  
-         --pubkey $(terpd tendermint show-validator) \ 
-         --moniker $MONIKER_NAME \ 
-         --chain-id $CHAIN_ID \ 
-         --fees 300upersyx \
-         --from <key-name>
-         -y
+         terpd tx staking create-validator \
+         --amount 10000000uterpx \
+         --from $WALLET \
+         --commission-max-change-rate "0.01" \
+         --commission-max-rate "0.2" \
+         --commission-rate "0.07" \
+         --min-self-delegation "1" \
+         --pubkey  $(terpd tendermint show-validator) \
+         --moniker $NODENAME \
+         --chain-id $TERP_CHAIN_ID
         
         
   (Please replace enter you moniker and replace <key-name> bij wallet)
