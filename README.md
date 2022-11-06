@@ -127,7 +127,7 @@
    
   + Unjail Validator
 
-        terpd tx slashing unjail --from wallet --chain-id athena-1 --gas-prices 0.1uterpx --gas-adjustment 1.5 --gas auto -y  
+        terpd tx slashing unjail --from wallet --chain-id athena-2 --fees 2000upersyx  
    
   + Jail Reason
 
