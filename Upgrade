@@ -1,7 +1,7 @@
-### Manual upgrade
+𝗠𝗮𝗻𝘂𝗮𝗹 𝘂𝗽𝗴𝗿𝗮𝗱𝗲
+
 
 Once the chain reaches the upgrade height, you will encounter the following panic error message:
-ERR UPGRADE "xxx" NEEDED at height: 1497396
 
 sudo systemctl stop terpd
 
