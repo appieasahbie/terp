@@ -11,6 +11,10 @@ cd terp-core
 git checkout v0.2.0
 make install
 
+# Download Genesis file for 0.2.0
+
+curl -s  https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-2/0.2.0/genesis.json > ~/.terp/config/genesis.json
+
 sudo systemctl restart terpd && journalctl -fu terpd -o cat
 
 
