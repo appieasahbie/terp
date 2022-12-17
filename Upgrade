@@ -14,9 +14,26 @@
 # Download Genesis file for 0.2.0
 
    curl -s  https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-2/0.2.0/genesis.json > ~/.terp/config/genesis.json
+   
+# Add skip upgrades flag to service file
 
-   sudo systemctl daemon-reload
-   sudo systemctl start terpd
-   sudo journalctl -u terpd -f --no-hostname -o cat
+   sudo tee /etc/systemd/system/terpd.service > /dev/null << EOF
+   [Unit]
+   Description=TerpNetwork Node
+   After=network-online.target
+   [Service]
+   User=$USER
+   ExecStart=$(which terpd) start --unsafe-skip-upgrades 1497396
+   Restart=on-failure
+   RestartSec=10
+   LimitNOFILE=10000
+   [Install]
+   WantedBy=multi-user.target
+   EOF
+   
+   
+ sudo systemctl daemon-reload
+ sudo systemctl start terpd
+ sudo journalctl -u terpd -f --no-hostname -o cat
 
 
