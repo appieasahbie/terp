@@ -1,4 +1,4 @@
-# Manual upgrade
+### Manual upgrade
 
 Once the chain reaches the upgrade height, you will encounter the following panic error message:
 ERR UPGRADE "xxx" NEEDED at height: 1497396
