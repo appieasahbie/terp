@@ -1,20 +1,22 @@
 𝗠𝗮𝗻𝘂𝗮𝗹 𝘂𝗽𝗴𝗿𝗮𝗱𝗲 DO not upgrade before chain reches the block 1497396
 
 
-Once the chain reaches the upgrade height, you will encounter the following panic error message:
+# Once the chain reaches the upgrade height, you will encounter the following panic error message:
 
-sudo systemctl stop terpd
+    sudo systemctl stop terpd
 
-cd $HOME && rm -rf terp-core
-git clone https://github.com/terpnetwork/terp-core.git
-cd terp-core
-git checkout v0.2.0
-make install
+    cd $HOME && rm -rf terp-core
+    git clone https://github.com/terpnetwork/terp-core.git
+    cd terp-core
+    git checkout v0.2.0
+    make install
 
 # Download Genesis file for 0.2.0
 
-curl -s  https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-2/0.2.0/genesis.json > ~/.terp/config/genesis.json
+   curl -s  https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-2/0.2.0/genesis.json > ~/.terp/config/genesis.json
 
-sudo systemctl restart terpd && journalctl -fu terpd -o cat
+   sudo systemctl daemon-reload
+   sudo systemctl start terpd
+   sudo journalctl -u terpd -f --no-hostname -o cat
 
 
