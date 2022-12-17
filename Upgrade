@@ -1,4 +1,4 @@
-𝗠𝗮𝗻𝘂𝗮𝗹 𝘂𝗽𝗴𝗿𝗮𝗱𝗲
+𝗠𝗮𝗻𝘂𝗮𝗹 𝘂𝗽𝗴𝗿𝗮𝗱𝗲 DO not upgrade before chain reches the block 1497396
 
 
 Once the chain reaches the upgrade height, you will encounter the following panic error message:
@@ -13,4 +13,4 @@ make install
 
 sudo systemctl restart terpd && journalctl -fu terpd -o cat
 
-!!! DO NOT UPGRADE BEFORE CHAIN RECHES THE BLOCK 1497396!!!
+
