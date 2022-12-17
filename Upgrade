@@ -1,0 +1,16 @@
+# Manual upgrade
+
+Once the chain reaches the upgrade height, you will encounter the following panic error message:
+ERR UPGRADE "xxx" NEEDED at height: 1497396
+
+sudo systemctl stop terpd
+
+cd $HOME && rm -rf terp-core
+git clone https://github.com/terpnetwork/terp-core.git
+cd terp-core
+git checkout v0.2.0
+make install
+
+sudo systemctl restart terpd && journalctl -fu terpd -o cat
+
+!!! DO NOT UPGRADE BEFORE CHAIN RECHES THE BLOCK 1497396!!!
