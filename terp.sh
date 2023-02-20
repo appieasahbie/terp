@@ -61,7 +61,7 @@ echo -e "\e[1m\e[32m3. Downloading and building binaries... \e[0m" && sleep 1
 cd $HOME && rm -rf terp-core
 git clone https://github.com/terpnetwork/terp-core.git
 cd terp-core
-git checkout v0.1.2
+git checkout v0.3.0
 make install
 
 # config
