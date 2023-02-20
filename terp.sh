@@ -76,8 +76,8 @@ terpd init $NODENAME --chain-id $TERP_CHAIN_ID
 wget -qO $HOME/.terp/config/genesis.json "https://raw.githubusercontent.com/terpnetwork/test-net/master/athena-2/genesis.json"
 
 # set peers and seeds
-SEEDS=""
-PEERS="a35d972b7fdb964e922c4df42befdb0fa8ae2679@185.214.134.154:36656,08a0f07da691a2d18d26e35eaa22ec784d1440cd@194.163.164.52:56656,84d770b9c4d10c734fd9ec5753ab19d4693ecbcd@116.202.236.115:21316,2f0f98eb3965cc9949073b1f0e75a5e55be44ed2@65.109.28.177:21856"
+SEEDS="a6ee57fb457f71530d165afd1901d0d62cd7d7e0@terp-testnet-seed.itrocket.net:443"
+PEERS="51d48be3809bb8907c1ef5f747e53cdd0c9ded1b@terp-testnet-peer.itrocket.net:443"
 sed -i -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persistent_peers = \"$PEERS\"/" $HOME/.terp/config/config.toml
 
 # set custom ports
